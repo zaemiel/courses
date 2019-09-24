@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Первый в Рунете Практический курс парсинга сайтов на Python. Много объяснений и практики." />
+    <meta name="yandex-verification" content="7b1ca758cff445be" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Практический курс парсинга сайтов на Python</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115888937-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115888937-1');
+    </script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Наверх</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="offer" href="#">О курсе</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="content" href="#">Программа</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="target-audience" href="#">Для кого</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="price" href="#">Цена</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="faq" href="#">FAQ</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <!-- <div class="overlay"></div> -->
+        <div class="container header-wrapper">
+            <div class="description text-center">
+                <h4 class="subtitle mb-4">Первый в Рунете</h4>
+                <h1 class="main-title">Практический курс парсинга сайтов <br> на Python</h1>
+                <h2 class="main-subtitle mt-4">Максимальное приближение к задачам реального парсинга <br> Отработка на 13 парсерах разной сложности</h2>
+                <a href="https://glopart.ru/buy/184180" class="btn btn-primary mt-5" role="button" onClick="yaCounter48087101.reachGoal('buyButtonUpper'); return true;">Купить</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- mesures -->
+    <div class="mesures pt-5 mt-5 mb-5" id="offer">
+        <div class="container">
+            <div class="row text-center mesure-items">
+                <div class="mesure-item col-sm-6 col-md-6 col-lg-4">
+                    <div class="icon mx-auto">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h4 class="mt-4 mb-4">14 Видео</h4>
+                    <p>Как анализировать верстку и запросы к сайтам разной сложности. Как писать парсеры</p>
+                </div>
+                <div class="mesure-item col-sm-6 col-md-6 col-lg-4">
+                    <div class="icon mx-auto">
+                        <i class="far fa-file-code"></i>
+                    </div>
+                    <h4 class="mt-4 mb-4">13 Парсеров</h4>
+                    <p>Для сайтов разной сложности, которые вы напишете по мере прохождения курса</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end mesures -->
+
+    <!-- offer -->
+    <div class="offer pt-5 mt-5 pb-5">
+        <div class="container justify-content-center">
+            <div class="offer-title text-center mb-5">
+                <h2>Что вы получаете</h2>
+            </div>
+
+            <div class="offer-item mb-4 justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-1 offer-item__icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="col-sm-10 col-md-8 col-lg-6 offer-item__text"><strong>Экономию времени</strong> на поиске обучающих материалов и оптимального решения конкретной задачи. Здесь собраны основные проблемы парсинга сайтов, встречающиеся в реальной жизни.</div>
+                </div>
+            </div>
+
+            <div class="offer-item mb-4 justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-1 offer-item__icon">
+                        <i class="far fa-comment"></i>
+                    </div>
+                    <div class="col-sm-10 col-md-8 col-lg-6 offer-item__text"><strong>Подробные объяснения</strong> каждой детали процесса и многократные повторения заставят ваш мозг эффективнее запоминать материал.</div>
+                </div>
+            </div>
+
+            <div class="offer-item justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-1 offer-item__icon">
+                        <i class="fas fa-angle-double-up"></i>
+                    </div>
+                    <div class="col-sm-10 col-md-8 col-lg-6 offer-item__text"><strong>Опыт и достаточное количество практики</strong> парсинга сайтов. В течение всего курса вы напишете 13 парсеров - это хорошая практика, которой так не хватает новичкам. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end offer -->
+
+    <!-- content -->
+    <div class="content-course pt-5 mb-5 pb-5" id="content">
+        <div class="container">
+            <div class="content-course__titles mt-5 mb-5 text-center">
+                <h2>Программа курса</h2>
+                <h3>То, что нужно начинающему питонисту для начала профессиональной деятельности
+                </h3>
+            </div>
+
+            <div class="row content-course__wrapper justify-content-center">
+
+                <div class="col-sm-12 col-md-5">
+                    <ul class="content-course__list">
+                        <li>Основы BeautifulSoup</li>
+                        <li>Парсинг табличных данных</li>
+                        <li>Работа с пагинацией (2 вида)</li>
+                        <li>Чтение и запись данных в CSV</li>
+                        <li>Запись данных в PostgreSQL</li>
+                        <li>Продвинутые методы работы с BeautifulSoup</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <ul class="content-course__list">
+                        <li>Парсинг данных, подгружаемых при помощи AJAX (2 видео)</li>
+                        <li>Парсинг в несколько процессов</li>
+                        <li>Использование прокси</li>
+                        <li>Парсинг данных, подгружаемых JQuery</li>
+                        <li>Смена User-Agent</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+    <!-- audience -->
+    <div class="target-audience mt-5 pt-5 pb-5" id="target-audience">
+        <div class="container">
+
+            <div class="target-audience__title text-center mb-4">
+                <h2>Этот курс для вас, если:</h2>
+            </div>
+
+            <div class="audience-list mx-auto">
+                <div class="audience-list-item">
+                    <div class="row audience-item-details">
+                        <div class="col-1 audience-item__icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="col-sm-11 col-md-8 col-lg-6 audience-item__description">Вы проработали хоть какой-нибудь туториал по Python и знаете основы языка (списки, словари, циклы, функции)</div>
+                    </div>
+                </div>
+                <div class="audience-list-item">
+                    <div class="row audience-item-details">
+                        <div class="col-1 audience-item__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="col-sm-11 col-md-8  col-lg-6 audience-item__description">На базовом уровне вы знаете HTML</div>
+                    </div>
+                </div>
+                <div class="audience-list-item">
+                    <div class="row audience-item-details">
+                        <div class="col-1 audience-item__icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="col-sm-11 col-md-8  col-lg-6 audience-item__description">Вы думающий человек, который готов разбираться в своем коде и отрабатывать свои ошибки</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end audience -->
+
+    <!-- price -->
+    <div class="price pt-5 pb-5" id="price">
+        <div class="container">
+
+            <div class="price__titles text-center">
+                <h2>Стоимость курса составляет</h2>
+            </div>
+            <div class="price__details text-center mt-5">
+                <p class="price-rub mb-5"><span class="price-details__summ">2940</span><br> рублей</p>
+                <div class="row price-description">
+                    <div class="price-description__wrapper col-md-5">
+                        <div class="col-* price-details__archive">Архив с курсом + исходники: </div>
+                        <div class="col-4 price-details__size">809 Мб</div>
+                    </div>
+                </div>
+                <a href="https://glopart.ru/buy/184180" class="btn btn-primary" role="button" onClick="yaCounter48087101.reachGoal('buyButtonLower'); return true;">Купить</a>
+            </div>
+        </div>
+    </div>
+    <!-- end price -->
+
+    <!-- faq -->
+    <div class="faq mb-5 pt-5" id="faq">
+        <div class="container">
+            <div class="faq__title text-center">
+                <h2>FAQ</h2>
+            </div>
+
+            <div id="accordion">
+                <div class="card col-sm-12 col-md-10">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Какими средствами делается парсинг в этом курсе?
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Все делается при помощи библиотек Requests и Beautiful Soup 4, Lxml. Даже парсинг данных, подгружаемых AJAX и JQuery.</p>
+
+                            <p>Здесь <span class="bold">НЕ</span> используются Selenium, Grab, Scrapy и другие средства.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-10">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Как установить Requests, Beautiful Soup 4 и Lxml
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                <span class="bold">Для Python 3.x</span>
+                            </p>
+                            <pre>sudo pip3 install requests, beautifulsoup4, lxml</pre>
+
+                            <p>
+                                <span class="bold">Для Python 2.7</span>
+                            </p>
+                            <pre>sudo pip install requests, beautifulsoup4, lxml</pre>
+
+                            <p>
+                                <span class="bold">Для Windows</span>
+                            </p>
+                            <p>У вас, скорее всего, в системе только один Python, который вы установили. Поэтому команда:</p>
+                            <pre>pip install requests, beautifulsoup4, lxml</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-md-10">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                При открытии CSV в Excel (Windows) все данные распологаются в одну строку. Что делать?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Проблема связана с тем, как Windows интерпретирует запятые. По умолчанию для русскоязычных установок разделителем столбцов является точка с запятой, а не запятая, как положено по стандарту. </p><br>
+                            <p>Вариантов решения я вижу три:</p>
+                            <p><span class="bold">1. Явно указать при записи в CSV-файл параметр delimiter=';'</span></p>
+                            <p>т.е. общий вид создания объекта для записи строк в CSV-файлы выглядит так:</p>
+                            <pre>writer = csv.writer(csvfile, delimiter=';')</pre>
+                            <br>
+                            <p><span class="bold">
+                                2. Изменить глобальные настройки системы Windows для интерпретации запятых и точек с запятой
+                            </span></p>
+                            <p><span class="bold">Windows 7:</span></p>
+                            <p>Панель управления -> Часы, язык и регион -> Изменение форматов даты, времени и чисел -> Дополнительные параметры</p>
+                            <p>Вкладка "Числа" и затем смотрите пункт "Разделитель элементов списка"</p>
+                            <img src="images/semicolon_as_separator_windows.jpg" alt="">
+
+                            <br>
+                            <p><span class="bold">
+                                3. Изменить параметры интерпретации разделителей при импорте CSV в самом Excel
+                            </span></p>
+                            <ul>
+                                <li>В меню выберите: Данные - Импорт внешних данных - Импортировать данные.</li>
+                                <li>Затем найдите ваш csv-файл и нажмите кнопку "Открыть".</li>
+                                <li>Откроется мастер импорта. На втором шаге <span class="bold">снимите</span> галку <span class="bold">с точки запятой</span> и поставьте галку <span class="bold">на запятую</span></li>
+                                <li>На третьем шаге целесообразно выбрать <span class="bold">текстовый формат</span> для всех колонок</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end card -->
+                <div class="card col-sm-12 col-md-10">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Я получаю ошибку AttributeError: 'NoneType' object has no attribute...
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            Это исключение связано с тем, что объект, к атрибуту (свойству или методу) которого вы обращаетесь - "пустой", т.е. относится к типу NoneType. А это, в свою очередь, означает, что функция Beautiful Soup'а ничего по вашим критериям не нашла.
+
+                            Это не обязательно будет связано именно с работой Beautiful Soup'а, но чаще всего "виновником" этого исключения будет именно "Суп".
+                            <br>
+                            Посмотрите мое видео на эту тему:
+                            <a href="https://www.youtube.com/watch?v=hUZ9B6gcnuo" target="_blank">Python: работа с ошибками на примере нерабочих парсеров</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end card -->
+                <div class="card col-sm-12 col-md-10">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Я получаю ошибку UnicodeDecodeError: 'charmap' codec can't decode byte...
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Чаще всего с этим сталкиваются пользователи Windows, поскольку Windows по умолчанию не отрабатывает кодировку Unicode и использует свою cp1251, а функция open() в Python3 по умолчанию использует переменую среды locale.getpreferredencoding(False)</p>
+
+                            <p>Чтобы решить эту проблему, посмотрите какая строка вашего парсера привела к этому исключению, а затем попробуйте указать кодировку явно. <br><br>Например, так:</p>
+
+                            <pre>with open(filename, encoding='utf8') as f:</pre>
+
+                            <p>или так:</p>
+                            <pre>with open(filename, encoding='utf8', newline='') as f:</pre>
+
+
+                            параметр newline='' может потребоваться, чтобы отключить замену новых строк.
+                            <br><br>
+                            <p><span class="bold">Для пользователей Ubuntu, Mint, MacOS</span></p>
+                            <p>Иногда (хотя значитель реже) у нас тоже такое бывает. Это может говорить о том, что по каким-то причинам у вас сбита локаль, но при это в консоли все может работать нормально. Посмотрите вывод команды</p>
+                            <pre>locale</pre>
+                            <p>В зависимости от обстоятельств лечение может быть таким:</p>
+
+                            <p>В файл .bash_profile/.profile вписываем две строчки:</p>
+                            <pre>export LC_ALL=ru_RU.UTF-8
+export LANG=ru_RU.UTF-8</pre>
+                            <br>
+                            <p>Не помогло? Гуглим ошибку применительно к конкретной ОС</p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end card -->
+                <div class="card col-sm-12 col-md-10">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Будет ли обратная связь?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Обратной связи <span class="bold">НЕ</span> будет</p>
+
+                            <p>Это моя принципиальная позиция. На начальном этапе нужно получать опыт как можно больше и быстрее, а это возможно только при определенных усилиях со стороны обучающегося.</p>
+
+                            <p>Наличие рядом кого-то, кто готов в любой момент рассказать, почему у вас не работает и где у вас ошибка устраняет вас от анализа и необходимого напряжения.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end card -->
+                <div class="card col-sm-12 col-md-10">
+                    <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Какие способы оплаты принимаются?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Все делается через сервис Glopart</p>
+
+                            <p>Они используют самые распространенные средства оплаты, в том числе:</p>
+                            <div class="payments">
+                                <div class="payment-item"><img src="images/payment/visa-a43e4e83.jpg" alt=""></div>
+                                <div class="payment-item"><img src="images/payment/yandex-022202a6.jpg" alt=""></div>
+                                <div class="payment-item"><img src="images/payment/qiwi-70e36e2a.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end faq -->
+
+    <!-- footer -->
+    <footer class="pb-3">
+        <div class="container">
+            <div class="row social-media pt-2 pb-2">
+                <div class="social-media_item col-1">
+
+                    <a class="social-media__youtube" href="https://www.youtube.com/channel/UCD5_waDcGBhof9xuA1qovTQ" target="_blank" title="Мой канал на Youtube - зайдите там тоже есть интересный материал"><i class="fab fa-youtube"></i></a>
+
+                </div>
+            </div>
+            <div class="row contacts">По вопросам оплаты: <span class="contacts__email"> support@p-notes.ru</span></div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter48087101 = new Ya.Metrika({
+                        id:48087101,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/48087101" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</body>
+</html>
