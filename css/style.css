@@ -227,9 +227,13 @@ footer {
     justify-content: center;
 
 }
-.contacts__email {
+.emphasize__green {
     color: #a6e22e;
     padding-left: 1em;
+}
+
+.emphasize__green:hover {
+    color: #c2ff00;
 }
 
 @media screen and (min-width: 320px) and (orientation: portrait) {
