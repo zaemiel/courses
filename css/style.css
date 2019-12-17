@@ -65,6 +65,12 @@ pre {
     justify-content: center;
 }
 
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    height: 15rem;
+}
+
 h4.subtitle {
     color: #ffbf00;
 }
